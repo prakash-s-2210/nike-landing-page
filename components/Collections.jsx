@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "./Button";
 const Collections = () => {
   return (
@@ -37,7 +38,7 @@ const Collections = () => {
           </div>
         </div>
       </div>
-      {/* <div className="relative w-1/2 overflow-hidden">
+      <div className="relative w-1/2 overflow-hidden">
         <div class="bg-[url('/assets/images/demo1.png')]  w-full h-full  opacity-30   bg-cover  bg-no-repeat"></div>
         <Image
           src='/assets/images/demo1.png'
@@ -60,7 +61,7 @@ const Collections = () => {
           height={100}
           className="absolute bottom-10 z-20 bg-secondary-background"
         />
-      </div> */}
+      </div>
     </section>
   );
 };

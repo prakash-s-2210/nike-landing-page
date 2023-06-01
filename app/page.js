@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Nav />
-      {/* <Collections /> */}
+      <Collections />
       <PopularProducts />
       <ProductDetail />
       <SupportSection />
