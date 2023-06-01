@@ -1,9 +1,25 @@
-import Image from 'next/image'
+import Nav from "../components/Nav";
+import Collections from '@/components/Collections';
+import Footer from "@/components/Footer";
+import PopularProducts from '@/components/PopularProducts';
+import ProductDetail from '@/components/ProductDetail';
+import Review from "@/components/Review";
+import ShoePromotion from "@/components/ShoePromotion";
+import Subscribe from "@/components/Subscribe";
+import SupportSection from "@/components/SupportSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     Ecommerce 
-    </main>
+    <div>
+      <Nav />
+      {/* <Collections /> */}
+      <PopularProducts />
+      <ProductDetail />
+      <SupportSection />
+      <ShoePromotion />
+      <Review />
+      <Subscribe />
+      <Footer />
+    </div>
   )
 }
