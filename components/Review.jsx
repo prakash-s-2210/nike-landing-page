@@ -36,7 +36,7 @@ const Review = () => {
           />
         </button>
       </div>
-      <div className="flex-between max-lg:flex-col max-lg:gap-5">
+      <div className="flex-between px-10 max-md:px-0 max-lg:flex-col max-lg:gap-5">
         <ReviewCard
           source="/assets/images/customer1.png"
           customerName="Morich Brown"

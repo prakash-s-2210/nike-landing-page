@@ -11,7 +11,7 @@ const Collections = () => {
           <h1 className="font-palanquin font-width box-border  relative text-8xl z-20">
             <span className="font-width inline-block pb-2 text-8xl whitespace-nowrap">
               The New Arrival
-            </span>
+            </span>{" "}
             <span className=" font-width text-8xl inline-block text-coral-red">
               Nike
             </span>{" "}
