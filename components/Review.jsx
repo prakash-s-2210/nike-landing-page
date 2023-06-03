@@ -2,22 +2,21 @@ import ReviewCard from "./ReviewCard";
 import Image from "next/image";
 const Review = () => {
   return (
-    <div className="bg-pale-blue  py-28 max-sm:py-20 px-20 max-lg:px-16 max-sm:px-10 max-[500px]:px-5">
-      <h3 className="font-palanquin text-center text-5xl max-sm:text-4xl">
+    <section className="bg-pale-blue pt-[78px] pb-[70px] max-md:px-16 max-sm:px-10 max-[500px]:px-5">
+      <h3 className="font-palanquin text-center text-4xl">
         What Our{" "}
-        <span className="font-palanquin inline-block text-5xl max-sm:text-4xl text-coral-red">
+        <span className="inline-block font-palanquin text-4xl text-coral-red">
           Customers{" "}
         </span>
         Say?
       </h3>
-      <p className="font-montserrat mt-5 text-center m-auto text-slate-gray  max-w-lg">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores,
-        quae.
+      <p className="mt-4 max-w-lg m-auto font-montserrat text-center text-slate-gray text-lg leading-[30px]">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusantium numquam fuga!
       </p>
-      <div className="flex flex-1 justify-end gap-3">
+      <div className="flex flex-1 justify-end gap-[14px] -mt-2 max-md:mt-2 pr-[124px] max-md:pr-0">
         <button>
           <Image
-            src="/assets/icon/chevron-left.png"
+            src="/assets/icon/chevron-left.svg"
             alt="chevron left"
             width={48}
             height={48}
@@ -27,7 +26,7 @@ const Review = () => {
         </button>
         <button>
           <Image
-            src="/assets/icon/chevron-right.png"
+            src="/assets/icon/chevron-right.svg"
             alt="chevron right"
             width={48}
             height={48}
@@ -36,19 +35,19 @@ const Review = () => {
           />
         </button>
       </div>
-      <div className="flex-between px-10 max-md:px-0 max-lg:flex-col max-lg:gap-5">
+      <div className="flex flex-1 justify-between items-center max-lg:flex-col gap-14 mt-5 px-[148px] max-md:px-0">
         <ReviewCard
-          source="/assets/images/customer1.png"
+          source="/assets/images/customer1.svg"
           customerName="Morich Brown"
           rating={4.5}
         />
         <ReviewCard
-          source="/assets/images/customer2.png"
+          source="/assets/images/customer2.svg"
           customerName="Lota Mongeskar"
           rating={4.5}
         />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,39 +5,10 @@
 
 
 * {
-  margin: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-palanquinDark), var(--font-Montserrat);
-  font-size: 18px;
-}
-
-/* Tailwind Styles */
-
-.font-width {
-  font-size: 7vw;
-}
-
-.nav-link{
-  @apply leading-5 font-normal font-montserrat text-lg text-slate-gray;
 }
 
 
-.flex-column{
-  @apply flex flex-col;
-}
-.flex-center {
-  @apply flex justify-center items-center;
-}
-
-.flex-start {
-  @apply flex justify-start items-start;
-}
-
-.flex-end {
-  @apply flex justify-end items-center;
-}
-
-.flex-between {
-  @apply flex justify-between items-center;
-}

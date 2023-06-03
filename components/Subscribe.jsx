@@ -5,15 +5,15 @@ import Button from "./Button"
 const Subscribe = () => {
     const [ inputValue, setInputValue ] = useState("")
   return (
-    <div className="flex-between gap-5 max-lg:flex-col max-lg:gap-10 my-20 max-sm:my-10  px-20 max-lg:px-16 max-sm:px-10 max-[500px]:px-5">
-        <h3 className="text-black text-5xl max-sm:text-4xl leading-[4rem] max-w-2xl max-sm:leading-[3rem]">
-            Sign Up for <span className="inline-block text-coral-red text-5xl max-sm:text-4xl">Updates</span>{" "}& Newsletter
+    <section id = "services" className="p-[120px] max-lg:px-16 max-sm:px-10 max-[500px]:px-5 pb-[124px] w-full flex justify-between items-center gap-5 max-lg:flex-col max-lg:gap-10">
+        <h3 className="w-1/2 max-lg:w-full text-4xl leading-[68px] max-w-md max-lg:max-w-none font-palanquin">
+            Sign Up for <span className="inline-block text-coral-red text-4xl leading-[68px] font-palanquin">Updates</span>{" "}& Newsletter
         </h3>
-        <div className="flex max-sm:flex-col max-sm:gap-5 max-sm:w-full border max-sm:border-none border-black py-1 pr-1 pl-3 rounded-3xl">
-            <input type="text" value={inputValue} placeholder="mdsajib123@gmail.com"  onChange={(e) => setInputValue(e.target.value)} className="text-sm font-montserrat pr-2 outline-none text-slate-gray max-sm:px-2 max-sm:py-4  max-sm:border max-sm:border-black max-sm:rounded-3xl"/>
-            <Button label = "Sign Up" fullWidth/>
+        <div className="w-[40%] max-xl:w-1/2 max-lg:w-full m-0 flex items-center p-[5px] border border-slate-gray rounded-full max-[500px]:flex-col max-[500px]:border-none max-[500px]:items-start max-[500px]:gap-5">
+            <input type="text" value={inputValue} placeholder="mdsajib1234@gmail.com"  onChange={(e) => setInputValue(e.target.value)} className="w-[100%] text-[16px] leading-normal text-slate-gray py-[19px] ml-[19px] pr-[19px] outline-none max-[500px]:border max-[500px]:m-0 max-[500px]:pl-[19px] max-[500px]:rounded-full max-[500px]:border-slate-gray"/>
+            <div className="m-0 flex justify-end items-center max-[500px]:w-full"><Button label = "Sign Up" fullWidth/></div>
         </div>
-    </div>
+    </section>
   )
 }
 

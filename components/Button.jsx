@@ -1,10 +1,20 @@
 import Image from "next/image";
-const Button = ({ label, source, backgroundColor, fullWidth }) => {
+const Button = ({
+  label,
+  source,
+  backgroundColor,
+  textColor,
+  borderColor,
+  fullWidth,
+}) => {
   return (
     <button
-      className={`flex flex-1 justify-center  gap-2 w-32 border font-montserrat
-      ${backgroundColor ? `bg-${backgroundColor} text-slate-gray border-slate-gray` : 'bg-coral-red text-white border-coral-red'}
-          py-2 rounded-full ${fullWidth && "max-sm:w-full max-sm:py-4"}`} 
+      className={`flex flex-1 justify-center m-0 items-center min-w-max gap-2 px-[25px] py-[18px] border font-montserrat text-lg leading-none
+      ${
+        backgroundColor
+          ? `bg-${backgroundColor} text-${textColor} border-${borderColor}`
+          : "bg-coral-red text-white border-coral-red"
+      } rounded-full ${!fullWidth && "max-sm:py-[10px]"}`}
     >
       {label}
       {source && (

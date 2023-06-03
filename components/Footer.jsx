@@ -1,83 +1,108 @@
 import Image from "next/image";
 const Footer = () => {
   return (
-    <div className=" bg-black px-20 max-lg:px-16 max-sm:px-10 max-[500px]:px-5 py-10 ">
-      <div className="flex flex-1 justify-between gap-5 flex-wrap">
-        <div className=" flex flex-col gap-5">
+    <section
+      id="contact-us"
+      className="bg-black pt-14 pb-[14px] px-[120px] max-lg:px-16 max-sm:px-10 max-[500px]:px-5"
+    >
+      <div className="flex flex-1 justify-between items-start gap-10 flex-wrap max-lg:flex-col max-lg:items-start">
+        <div className="w-1/3 flex flex-col items-start m-0 max-lg:w-1/2 max-sm:w-full">
           <Image
-            src="/assets/images/footer-logo.png"
+            src="/assets/images/footer-logo.svg"
             alt="logo"
             width={150}
             height={46}
             quality={100}
-            className=""
+            className="m-0"
           />
-          <p className="text-white max-w-sm break-words font-montserrat text-sm">
+          <p className="mt-6 text-base leading-[28px] font-montserrat text-white max-w-sm break-words">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fuga
             consectetur quaerat inventore accusamus praesentium!
           </p>
-          <div className=" flex gap-5">
-            <Image
-              src="/assets/icon/facebook.png"
-              alt="facebook logo"
-              width={35}
-              height={30}
-              quality={100}
-              className="bg-white rounded-full  px-2 py-2"
-            />
-            <Image
-              src="/assets/icon/twitter.png"
-              alt="twitter logo"
-              width={35}
-              height={30}
-              quality={100}
-              className="bg-white rounded-full  px-2 py-2"
-            />
-            <Image
-              src="/assets/icon/instagram.png"
-              alt="instagram logo"
-              width={35}
-              height={30}
-              quality={100}
-              className="bg-white rounded-full  px-2 py-2"
-            />
+          <div className=" flex flex-1 items-center m-0 gap-5 mt-[34px]">
+            <div className="flex flex-1 justify-center items-center w-[52px] h-[52px] max-sm:w-10 max-sm:h-10 bg-white rounded-full">
+              <Image
+                src="/assets/icon/facebook.svg"
+                alt="facebook logo"
+                width={24}
+                height={24}
+                quality={100}
+                className="m-0 max-sm:w-5 max-sm:h-5"
+              />
+            </div>
+            <div className="flex flex-1 justify-center items-center w-[52px] h-[52px] max-sm:w-10 max-sm:h-10 bg-white rounded-full">
+              <Image
+                src="/assets/icon/twitter.svg"
+                alt="twitter logo"
+                width={24}
+                height={24}
+                quality={100}
+                className="m-0 max-sm:w-5 max-sm:h-5"
+              />
+            </div>
+            <div className="flex flex-1 justify-center items-center w-[52px] h-[52px] max-sm:w-10 max-sm:h-10 bg-white rounded-full">
+              <Image
+                src="/assets/icon/instagram.svg"
+                alt="instagram logo"
+                width={24}
+                height={24}
+                quality={100}
+                className="m-0 max-sm:w-5 max-sm:h-5"
+              />
+            </div>
           </div>
         </div>
-        <div className="text-white">
-          <h4 className="font-montserrat text-2xl max-sm:text-xl">Products</h4>
-          <ul>
-            <li className="mt-2 font-montserrat text-sm">Air Force 1</li>
-            <li className="font-montserrat text-sm">Air Max 1</li>
-            <li className="font-montserrat text-sm">Air Jordan 1</li>
-            <li className="font-montserrat text-sm">Air Force 1</li>
-            <li className="font-montserrat text-sm">Nike Waffle Racer</li>
-            <li className="font-montserrat text-sm">Nike Cortez</li>
-          </ul>
-        </div>
-        <div className="text-white">
-          <h4 className="font-montserrat text-2xl max-sm:text-xl">Help</h4>
-          <ul>
-            <li className="mt-2 font-montserrat text-sm ">About us</li>
-            <li className="font-montserrat text-sm">FAQs</li>
-            <li className="font-montserrat text-sm">How it works</li>
-            <li className="font-montserrat text-sm">Privacy policy</li>
-            <li className="font-montserrat text-sm">Payment policy</li>
-          </ul>
-        </div>
-        <div className="text-white">
-          <h4 className="font-montserrat text-2xl max-sm:text-xl">
-            Get in touch
-          </h4>
-          <p className="mt-2 font-montserrat text-sm">nikeshoes565@gmail.com</p>
-          <p className="font-montserrat text-sm">+92554862354</p>
+        <div className="flex flex-1 justify-between gap-10 mt-2 m-0 w-full flex-wrap">
+          <div className="text-white  m-0">
+            <h4 className="font-montserrat text-2xl leading-normal font-medium mb-[23px]">
+              Products
+            </h4>
+            <ul>
+              <li className="mt-3 font-montserrat text-base leading-normal">Air Force 1</li>
+              <li className="mt-3 font-montserrat text-base leading-normal">Air Max 1</li>
+              <li className="mt-3 font-montserrat text-base leading-normal">Air Jordan 1</li>
+              <li className="mt-3 font-montserrat text-base leading-normal">Air Force 1</li>
+              <li className="mt-3 font-montserrat text-base leading-normal">Nike Waffle Racer</li>
+              <li className="mt-3 font-montserrat text-base leading-normal">Nike Cortez</li>
+            </ul>
+          </div>
+          <div className="text-white  m-0">
+            <h4 className="font-montserrat text-2xl leading-normal font-medium mb-[23px]">Help</h4>
+            <ul>
+              <li className="mt-3 font-montserrat text-base leading-normal">About us</li>
+              <li className="mt-3 font-montserrat text-base leading-normal">FAQs</li>
+              <li className="mt-3 font-montserrat text-base leading-normal">How it works</li>
+              <li className="mt-3 font-montserrat text-base leading-normal">Privacy policy</li>
+              <li className="mt-3 font-montserrat text-base leading-normal">Payment policy</li>
+            </ul>
+          </div>
+          <div className="text-white  m-0">
+            <h4 className="font-montserrat text-2xl leading-normal font-medium mb-[23px]">
+              Get in touch
+            </h4>
+            <p className="mt-3 font-montserrat text-base leading-normal">
+              nikeshoes565@gmail.com
+            </p>
+            <p className="mt-3 font-montserrat text-base leading-normal">+92554862354</p>
+          </div>
         </div>
       </div>
       <div className=" flex justify-between text-white mt-16 max-sm:flex-col max-sm:items-center max-sm:gap-2 max-sm:text-sm">
         <p className="font-montserrat max-sm:hidden"></p>
-        <p className="font-montserrat">&#169; Copyright.All right reserved.</p>
+        <div className="flex flex-1 justify-center gap-2 font-montserrat">
+          <Image
+            src="/assets/icon/copyright-sign.svg"
+            alt="copyright sign"
+            width={20}
+            height={20}
+            quality={100}
+            className="rounded-full m-0"
+          />
+          <p>Copyright.All right reserved.</p>
+        </div>
         <p className="font-montserrat">Term & Conditions</p>
       </div>
-    </div>
+    </section>
   );
 };
 
