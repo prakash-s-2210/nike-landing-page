@@ -2,7 +2,7 @@ import PopularProductCard from "./PopularProductCard";
 import Image from "next/image";
 const PopularProducts = () => {
   return (
-    <section className="pt-[201px] px-[120px] max-lg:px-16 max-sm:px-10 max-[500px]:px-5">
+    <section className="-mt-[71px] max-xl:mt-[180px] px-[120px] max-lg:px-16 max-sm:px-10 max-[500px]:px-5">
       <div className="flex flex-col justify-start  m-0 gap-[18px]">
         <h2 className="text-4xl font-palanquin">
           Our{" "}

@@ -30,6 +30,16 @@ module.exports = {
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
+      keyframes:{
+        pulse: {
+          '0%': { opacity: '0'},
+          '50%': { opacity: '0.5'},
+          '100%':{opacity: '1'}
+        }
+      },
+      animation: {
+        pulse: 'pulse 1s  cubic-bezier(0.4, 0, 0.6, 1)',
+      }
     },
   },
   plugins: [],

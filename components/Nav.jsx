@@ -7,9 +7,9 @@ const Nav = () => {
           <Image
             src="/assets/images/header-logo.svg"
             alt="logo"
-            width={128.9}
+            width={129}
             height={29}
-            className="max-w-128.9px m-0"
+            className="m-0"
           />
         </a>
         <ul className="flex justify-between gap-[3vw] max-lg:hidden  m-0">
