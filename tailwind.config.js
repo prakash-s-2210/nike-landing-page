@@ -23,18 +23,22 @@ module.exports = {
         montserrat: ["var(--font-Montserrat)"],
       },
       colors: {
+        'primary': "#ECEEFF",
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
-        "pale-blue":"#F5F6FF",
+        "pale-blue": "#F5F6FF",
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
-      keyframes:{
+      backgroundImage: {
+        'hero': "url('/assets/images/collection-background.svg')"
+      },
+      keyframes: {
         pulse: {
-          '0%': { opacity: '0'},
-          '50%': { opacity: '0.5'},
-          '100%':{opacity: '1'}
+          '0%': { opacity: '0' },
+          '50%': { opacity: '0.5' },
+          '100%': { opacity: '1' }
         }
       },
       animation: {
