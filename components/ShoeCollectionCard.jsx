@@ -1,25 +1,25 @@
 import Image from "next/image";
 
 const ShoeCollectionCard = ({index, imgSource, changeShoeImage, source }) => {
+  const handleClick = () => {
+    if(source !== imgSource.bigShoe){
+    changeShoeImage(imgSource.bigShoe);
+    const elementToAnimate = document.getElementById("element-to-animate");
+      elementToAnimate.classList.add("animate-pulse");
+      // Listen for the animation end event
+      elementToAnimate.addEventListener(
+        "animationend",
+        () => {
+          // Remove the animation class
+          elementToAnimate.classList.remove("animate-pulse");
+        },
+        { once: true }
+      ); // { once: true } ensures the event listener is only triggered once
+  }}
   return (
     <div
-      className="relative m-0"
-      onClick={() => {
-        if(source !== imgSource.bigShoe){
-        changeShoeImage(imgSource.bigShoe);
-        const elementToAnimate = document.getElementById("element-to-animate");
-          elementToAnimate.classList.add("animate-pulse");
-          // Listen for the animation end event
-          elementToAnimate.addEventListener(
-            "animationend",
-            () => {
-              // Remove the animation class
-              elementToAnimate.classList.remove("animate-pulse");
-            },
-            { once: true }
-          ); // { once: true } ensures the event listener is only triggered once
-      }}
-    }
+      className={`relative m-0 ${source===imgSource.bigShoe ? 'border-2 border-[#FF6452] rounded-[10px]':'cursor-pointer'}`} 
+      onClick={handleClick}
     >
       <Image
         src="/assets/images/thumbnail-background.svg"
