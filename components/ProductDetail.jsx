@@ -22,10 +22,11 @@ const ProductDetail = () => {
         <p className='mt-6 lg:max-w-lg font-montserrat text-slate-gray text-lg leading-[28px]'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, fugiat?
         </p>
-        <div className='mt-[51px]'>
+        <div className='mt-14'>
           <Button label='View details' />
         </div>
       </div>
+
       <div className='flex-1 flex justify-center items-center'>
         <Image
           src='/assets/images/shoe8.svg'
