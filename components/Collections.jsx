@@ -59,7 +59,7 @@ const Collections = () => {
           width={762}
           height={836}
           original={100}
-          className=" object-contain m-0 "
+          className=" object-contain m-0"
         />
         <div id = "element-to-animate" className="min-w-fit">
           <Image
