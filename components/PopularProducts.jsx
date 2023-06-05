@@ -1,22 +1,43 @@
-import PopularProductCard from "./PopularProductCard";
 import Image from "next/image";
+
+import PopularProductCard from "./PopularProductCard";
+
+const products = [
+  {
+    imgURL: "/assets/images/shoe4.svg",
+    name: "Nike Air Jordan-01",
+    price: "$200.20",
+  },
+  {
+    imgURL: "/assets/images/shoe5.svg",
+    name: "Nike Air Jordan-10",
+    price: "$210.20",
+  },
+  {
+    imgURL: "/assets/images/shoe6.svg",
+    name: "Nike Air Jordan-100",
+    price: "$220.20",
+  },
+  {
+    imgURL: "/assets/images/shoe7.svg",
+    name: "Nike Air Jordan-001",
+    price: "$230.20",
+  },
+];
+
 const PopularProducts = () => {
   return (
-    <section className='max-xl:mt-[180px] px-[120px] max-lg:px-16 max-sm:px-10 max-[500px]:px-5'>
-      <div className='flex flex-col justify-start  m-0 gap-[18px]'>
+    <section className='sm:px-16 px-6 sm:py-12 py-4'>
+      <div className='flex flex-col justify-start gap-[18px]'>
         <h2 className='text-4xl font-palanquin'>
-          Our{" "}
-          <span className='inline-block text-4xl font-palanquin text-coral-red'>
-            Popular
-          </span>{" "}
-          Products
+          Our <span className='text-coral-red'> Popular </span> Products
         </h2>
-        <p className='max-w-lg max-lg:max-w-full mt-4 break-words font-montserrat text-slate-gray'>
+        <p className='lg:max-w-lg mt-4 font-montserrat text-slate-gray'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum hic
           a quo minima aliquam autem iusto.
         </p>
       </div>
-      <div className='flex flex-1 -mt-3 max-lg:mt-3 justify-end gap-[14px]'>
+      <div className='flex justify-end gap-[14px]'>
         <button>
           <Image
             src='/assets/icon/chevron-left.svg'
@@ -38,27 +59,10 @@ const PopularProducts = () => {
           />
         </button>
       </div>
-      <div className='mt-6 grid grid-cols-4 gap-6 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-14'>
-        <PopularProductCard
-          source='/assets/images/shoe4.svg'
-          productName='Nike Air Jordan-01'
-          productPrice='$200.20'
-        />
-        <PopularProductCard
-          source='/assets/images/shoe5.svg'
-          productName='Nike Air Jordan-10'
-          productPrice='$210.20'
-        />
-        <PopularProductCard
-          source='/assets/images/shoe6.svg'
-          productName='Nike Air Jordan-100'
-          productPrice='$220.20'
-        />
-        <PopularProductCard
-          source='/assets/images/shoe7.svg'
-          productName='Nike Air Jordan-001'
-          productPrice='$230.20'
-        />
+      <div className='mt-6 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14'>
+        {products.map((product) => (
+          <PopularProductCard key={product.name} {...product} />
+        ))}
       </div>
     </section>
   );
