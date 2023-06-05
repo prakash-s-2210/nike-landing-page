@@ -4,19 +4,17 @@ import ReviewCard from "./ReviewCard";
 
 const Review = () => {
   return (
-    <section className='bg-pale-blue pt-[78px] pb-[70px] max-md:px-16 max-sm:px-10 max-[500px]:px-5'>
+    <section className='bg-pale-blue sm:px-16 px-6 sm:py-12 py-4'>
       <h3 className='font-palanquin text-center text-4xl'>
-        What Our{" "}
-        <span className='inline-block font-palanquin text-4xl text-coral-red'>
-          Customers{" "}
-        </span>
+        What Our
+        <span className='text-coral-red'> Customers </span>
         Say?
       </h3>
       <p className='mt-4 max-w-lg m-auto font-montserrat text-center text-slate-gray text-lg leading-[30px]'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
         accusantium numquam fuga!
       </p>
-      <div className='flex flex-1 justify-end gap-[14px] -mt-2 max-md:mt-2 pr-[124px] max-md:pr-0'>
+      <div className='flex justify-end gap-[14px] mt-10'>
         <button>
           <Image
             src='/assets/icon/chevron-left.svg'
@@ -38,7 +36,7 @@ const Review = () => {
           />
         </button>
       </div>
-      <div className='flex flex-1 justify-between items-center max-lg:flex-col gap-14 mt-5 px-[148px] max-md:px-0'>
+      <div className='flex flex-1 justify-evenly items-center max-lg:flex-col gap-14 mt-5'>
         <ReviewCard
           source='/assets/images/customer1.svg'
           customerName='Morich Brown'
