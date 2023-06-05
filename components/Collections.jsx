@@ -41,7 +41,7 @@ const Collections = () => {
           <br />
           <span className='text-coral-red inline-block mt-3'>Nike</span> Shoes
         </h1>
-        <p className='font-montserrat text-slate-gray text-lg leading-[30px] mt-6'>
+        <p className='font-montserrat text-slate-gray text-lg leading-[30px] mt-6 sm:max-w-sm'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
           repellendus.
         </p>

@@ -1,15 +1,6 @@
-/** TODO
- * Separate the external imports from the internal imports
- * 
- * ```javascript
- * import { Montserrat, Palanquin_Dark } from "next/font/google";
- * 
- * import "./globals.css";
- * ```
- */
+import { Montserrat, Palanquin_Dark } from "next/font/google";
 
 import "./globals.css";
-import { Montserrat, Palanquin_Dark } from "next/font/google";
 
 const montserrat = Montserrat(
   {
