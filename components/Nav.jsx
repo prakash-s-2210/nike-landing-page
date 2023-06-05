@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 const Nav = () => {
   return (
     <header id='home' className='absolute w-full z-10'>
@@ -63,4 +64,5 @@ const Nav = () => {
     </header>
   );
 };
+
 export default Nav;

@@ -24,7 +24,7 @@ const ReviewCard = ({ source, customerName, rating }) => {
           original={100}
           className='object-contain m-0'
         />
-        <p className='text-xl font-montserrat text-slate-gray'>(4.5)</p>
+        <p className='text-xl font-montserrat text-slate-gray'>({rating})</p>
       </div>
       <h3 className='mt-1 font-palanquin text-3xl text-center'>
         {customerName}
