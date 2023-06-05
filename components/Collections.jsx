@@ -29,8 +29,8 @@ const Collections = () => {
   };
 
   return (
-    <section className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 sm:pb-12 pb-4'>
-      <div className='relative xl:w-[40%] flex flex-col justify-center items-start w-full sm:pl-16 pl-6 pt-28'>
+    <section className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 padding-b'>
+      <div className='relative xl:w-[40%] flex flex-col justify-center items-start w-full padding-l pt-28'>
         <p className='text-xl font-montserrat text-coral-red'>
           Our Summer collections
         </p>
@@ -67,7 +67,7 @@ const Collections = () => {
         </div>
       </div>
 
-      <div className='relative flex-1 flex justify-center items-center min-h-screen bg-primary bg-hero bg-cover bg-center'>
+      <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
         <Image
           src={source}
           alt='shoe colletion'
@@ -77,7 +77,7 @@ const Collections = () => {
           className='object-contain relative z-10'
         />
 
-        <div className='flex gap-6 absolute -bottom-[5%] left-[10%]'>
+        <div className='flex gap-6 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
           {images.map((image, index) => (
             <div key={index}>
               <ShoeCollectionCard

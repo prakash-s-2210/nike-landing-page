@@ -40,10 +40,7 @@ const socialMedia = [
 
 const Footer = () => {
   return (
-    <footer
-      id='contact-us'
-      className='bg-black sm:px-16 px-6 sm:pt-12 pt-4 pb-8'
-    >
+    <footer id='contact-us' className='bg-black padding-x padding-t pb-8'>
       <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
         <div className='flex flex-col items-start'>
           <Image
@@ -91,7 +88,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex justify-between text-white mt-16 max-sm:flex-col max-sm:items-center'>
+      <div className='flex justify-between text-white mt-24 max-sm:flex-col max-sm:items-center'>
         <div className='flex flex-1 justify-center items-center gap-2 font-montserrat cursor-pointer'>
           <Image
             src='/assets/icon/copyright-sign.svg'

@@ -4,7 +4,7 @@ import ReviewCard from "./ReviewCard";
 
 const Review = () => {
   return (
-    <section className='bg-pale-blue sm:px-16 px-6 sm:py-12 py-4'>
+    <section className='bg-pale-blue padding'>
       <h3 className='font-palanquin text-center text-4xl'>
         What Our
         <span className='text-coral-red'> Customers </span>

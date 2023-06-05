@@ -17,7 +17,7 @@ const services = [
 
 const SupportSection = () => {
   return (
-    <section className='sm:px-16 px-6 sm:py-12 py-4 flex justify-center flex-wrap gap-9'>
+    <section className='padding-x py-10 flex justify-center flex-wrap gap-9'>
       {services.map((service) => (
         <SupportSectionCard key={service.label} {...service} />
       ))}

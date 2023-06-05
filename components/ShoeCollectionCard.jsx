@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const ShoeCollectionCard = ({ index, imgSource, changeShoeImage, source }) => {
+const ShoeCollectionCard = ({ imgSource, changeShoeImage, source }) => {
   const handleClick = () => {
     if (source !== imgSource.bigShoe) {
       changeShoeImage(imgSource.bigShoe);

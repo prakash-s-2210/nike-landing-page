@@ -2,7 +2,7 @@ import Image from "next/image";
 const Nav = () => {
   return (
     <header id='home' className='absolute w-full z-10'>
-      <nav className='flex justify-between items-center sm:px-16 px-6 py-8'>
+      <nav className='flex justify-between items-center padding-x py-8'>
         <a href='#home' className=''>
           <Image
             src='/assets/images/header-logo.svg'
@@ -46,7 +46,7 @@ const Nav = () => {
             </a>
           </li>
         </ul>
-        <div className='flex gap-2 text-lg leading-normal font-medium max-lg:hidden pr-10'>
+        <div className='flex gap-2 text-lg leading-normal font-medium max-lg:hidden xl:pr-20'>
           <a className='font-montserrat '>Sign in</a>
           <span className='font-montserrat '>/</span>
           <a className='font-montserrat'>Explore now</a>

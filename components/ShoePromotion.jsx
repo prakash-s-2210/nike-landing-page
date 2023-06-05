@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const ShoePromotion = () => {
   return (
-    <section className='flex justify-between items-center max-xl:flex-col-reverse gap-10 sm:px-16 px-6 sm:py-12 py-4'>
+    <section className='flex justify-between items-center max-xl:flex-col-reverse gap-10 padding'>
       <div className='flex-1'>
         <Image
           src='/assets/images/offer.svg'
