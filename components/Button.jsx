@@ -15,7 +15,7 @@ const Button = ({
         backgroundColor
           ? `bg-${backgroundColor} text-${textColor} border-${borderColor}`
           : "bg-coral-red text-white border-coral-red"
-      } rounded-full ${fullWidth && "min-w-max"}`}
+      } rounded-full ${fullWidth && "w-full"}`}
     >
       {label}
 
