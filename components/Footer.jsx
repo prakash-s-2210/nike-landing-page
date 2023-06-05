@@ -1,12 +1,51 @@
 import Image from "next/image";
+import Link from "next/link";
+
+const footerLinks = [
+  {
+    title: "Products",
+    links: [
+      { name: "Air Force 1", link: "/" },
+      { name: "Air Max 1", link: "/" },
+      { name: "Air Jordan 1", link: "/" },
+      { name: "Air Force 1", link: "/" },
+      { name: "Nike Waffle Racer", link: "/" },
+      { name: "Nike Cortez", link: "/" },
+    ],
+  },
+  {
+    title: "Help",
+    links: [
+      { name: "About us", link: "/" },
+      { name: "FAQs", link: "/" },
+      { name: "How it works", link: "/" },
+      { name: "Privacy policy", link: "/" },
+      { name: "Payment policy", link: "/" },
+    ],
+  },
+  {
+    title: "Get in touch",
+    links: [
+      { name: "nikeshoes565@gmail.com", link: "mailto:nikeshoes565@gmail.com" },
+      { name: "+92554862354", link: "tel:+92554862354" },
+    ],
+  },
+];
+
+const socialMedia = [
+  { src: "/assets/icon/facebook.svg", alt: "facebook logo" },
+  { src: "/assets/icon/twitter.svg", alt: "twitter logo" },
+  { src: "/assets/icon/instagram.svg", alt: "instagram logo" },
+];
+
 const Footer = () => {
   return (
-    <section
+    <footer
       id='contact-us'
-      className='bg-black pt-14 pb-[14px] px-[120px] max-lg:px-16 max-sm:px-10 max-[500px]:px-5'
+      className='bg-black sm:px-16 px-6 sm:pt-12 pt-4 pb-8'
     >
-      <div className='flex flex-1 justify-between items-start gap-10 flex-wrap max-lg:flex-col max-lg:items-start'>
-        <div className='w-1/3 flex flex-col items-start m-0 max-lg:w-1/2 max-sm:w-full'>
+      <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
+        <div className='flex flex-col items-start'>
           <Image
             src='/assets/images/footer-logo.svg'
             alt='logo'
@@ -15,107 +54,45 @@ const Footer = () => {
             quality={100}
             className='m-0'
           />
-          <p className='mt-6 text-base leading-[28px] font-montserrat text-white max-w-sm break-words'>
+          <p className='mt-6 text-base leading-[28px] font-montserrat text-white sm:max-w-sm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fuga
             consectetur quaerat inventore accusamus praesentium!
           </p>
-          <div className=' flex flex-1 items-center m-0 gap-5 mt-[34px]'>
-            <div className='flex flex-1 justify-center items-center w-[52px] h-[52px] max-sm:w-10 max-sm:h-10 bg-white rounded-full'>
-              <Image
-                src='/assets/icon/facebook.svg'
-                alt='facebook logo'
-                width={24}
-                height={24}
-                quality={100}
-                className='m-0 max-sm:w-5 max-sm:h-5'
-              />
-            </div>
-            <div className='flex flex-1 justify-center items-center w-[52px] h-[52px] max-sm:w-10 max-sm:h-10 bg-white rounded-full'>
-              <Image
-                src='/assets/icon/twitter.svg'
-                alt='twitter logo'
-                width={24}
-                height={24}
-                quality={100}
-                className='m-0 max-sm:w-5 max-sm:h-5'
-              />
-            </div>
-            <div className='flex flex-1 justify-center items-center w-[52px] h-[52px] max-sm:w-10 max-sm:h-10 bg-white rounded-full'>
-              <Image
-                src='/assets/icon/instagram.svg'
-                alt='instagram logo'
-                width={24}
-                height={24}
-                quality={100}
-                className='m-0 max-sm:w-5 max-sm:h-5'
-              />
-            </div>
+          <div className='flex items-center gap-5 mt-8'>
+            {socialMedia.map((icon) => (
+              <div
+                className='flex justify-center items-center w-12 h-12 bg-white rounded-full'
+                key={icon.alt}
+              >
+                <Image src={icon.src} alt={icon.alt} width={24} height={24} />
+              </div>
+            ))}
           </div>
         </div>
-        <div className='flex flex-1 justify-between gap-10 mt-2 m-0 w-full flex-wrap'>
-          <div className='text-white  m-0'>
-            <h4 className='font-montserrat text-2xl leading-normal font-medium mb-[23px]'>
-              Products
-            </h4>
-            <ul>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                Air Force 1
-              </li>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                Air Max 1
-              </li>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                Air Jordan 1
-              </li>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                Air Force 1
-              </li>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                Nike Waffle Racer
-              </li>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                Nike Cortez
-              </li>
-            </ul>
-          </div>
-          <div className='text-white  m-0'>
-            <h4 className='font-montserrat text-2xl leading-normal font-medium mb-[23px]'>
-              Help
-            </h4>
-            <ul>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                About us
-              </li>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                FAQs
-              </li>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                How it works
-              </li>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                Privacy policy
-              </li>
-              <li className='mt-3 font-montserrat text-base leading-normal'>
-                Payment policy
-              </li>
-            </ul>
-          </div>
-          <div className='text-white  m-0'>
-            <h4 className='font-montserrat text-2xl leading-normal font-medium mb-[23px]'>
-              Get in touch
-            </h4>
-            <p className='mt-3 font-montserrat text-base leading-normal'>
-              nikeshoes565@gmail.com
-            </p>
-            <p className='mt-3 font-montserrat text-base leading-normal'>
-              +92554862354
-            </p>
-          </div>
+
+        <div className='flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap'>
+          {footerLinks.map((section) => (
+            <div key={section.title}>
+              <h4 className='font-montserrat text-2xl leading-normal font-medium mb-6 text-white'>
+                {section.title}
+              </h4>
+              <ul>
+                {section.links.map((link) => (
+                  <li
+                    className='mt-3 font-montserrat text-base leading-normal text-white hover:text-slate-gray'
+                    key={link.name}
+                  >
+                    <Link href={link.link}>{link.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
-      <div className=' flex justify-between text-white mt-16 max-sm:flex-col max-sm:items-center max-sm:gap-2 max-sm:text-sm'>
-        <p className='font-montserrat max-sm:hidden'></p>
-        <div className='flex flex-1 justify-center gap-2 font-montserrat'>
+
+      <div className='flex justify-between text-white mt-16 max-sm:flex-col max-sm:items-center'>
+        <div className='flex flex-1 justify-center items-center gap-2 font-montserrat cursor-pointer'>
           <Image
             src='/assets/icon/copyright-sign.svg'
             alt='copyright sign'
@@ -126,9 +103,9 @@ const Footer = () => {
           />
           <p>Copyright.All right reserved.</p>
         </div>
-        <p className='font-montserrat'>Term & Conditions</p>
+        <p className='font-montserrat cursor-pointer'>Term & Conditions</p>
       </div>
-    </section>
+    </footer>
   );
 };
 
