@@ -1,12 +1,28 @@
-import SupportSectionCard from "./SupportSectionCard"
+import SupportSectionCard from "./SupportSectionCard";
+
+const services = [
+  {
+    imgURL: "/assets/icon/truck-fast.svg",
+    label: "Free shipping",
+  },
+  {
+    imgURL: "/assets/icon/shield-tick.svg",
+    label: "Secure Payment",
+  },
+  {
+    imgURL: "/assets/icon/kindness.svg",
+    label: "Love to help you",
+  },
+];
+
 const SupportSection = () => {
   return (
-    <section className="pt-[60px] grid grid-cols-3 gap-[37px] max-xl:grid-cols-2 max-md:grid-cols-1 px-[158px] max-lg:px-16 max-sm:px-10 max-[500px]:px-5">
-        <SupportSectionCard source="/assets/icon/truck-fast.svg" label = "Free shipping"/>
-        <SupportSectionCard source="/assets/icon/shield-tick.svg" label = "Secure Payments"/>
-        <SupportSectionCard source="/assets/icon/kindness.svg" label = "Love to help you"/>
+    <section className='sm:px-16 px-6 sm:py-12 py-4 flex justify-center flex-wrap gap-9'>
+      {services.map((service) => (
+        <SupportSectionCard key={service.label} {...service} />
+      ))}
     </section>
-  )
-}
+  );
+};
 
-export default SupportSection
+export default SupportSection;
