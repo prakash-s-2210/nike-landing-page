@@ -29,7 +29,10 @@ const Collections = () => {
   };
 
   return (
-    <section className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 padding-b'>
+    <section
+      id='home'
+      className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 padding-b'
+    >
       <div className='relative xl:w-[40%] flex flex-col justify-center items-start w-full padding-l max-xl:padding-r pt-28'>
         <p className='text-xl font-montserrat text-coral-red'>
           Our Summer collections

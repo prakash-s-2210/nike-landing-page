@@ -27,7 +27,7 @@ const products = [
 
 const PopularProducts = () => {
   return (
-    <section className='padding max-sm:mt-12'>
+    <section id='services' className='padding max-sm:mt-12'>
       <div className='flex flex-col justify-start gap-[18px]'>
         <h2 className='text-4xl font-palanquin'>
           Our <span className='text-coral-red'> Popular </span> Products

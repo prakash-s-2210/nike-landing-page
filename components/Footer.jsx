@@ -40,17 +40,19 @@ const socialMedia = [
 
 const Footer = () => {
   return (
-    <footer id='contact-us' className='bg-black padding-x padding-t pb-8'>
+    <footer className='bg-black padding-x padding-t pb-8'>
       <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
         <div className='flex flex-col items-start'>
-          <Image
-            src='/assets/images/footer-logo.svg'
-            alt='logo'
-            width={150}
-            height={46}
-            quality={100}
-            className='m-0'
-          />
+          <Link href='/'>
+            <Image
+              src='/assets/images/footer-logo.svg'
+              alt='logo'
+              width={150}
+              height={46}
+              quality={100}
+              className='m-0'
+            />
+          </Link>
           <p className='mt-6 text-base leading-[28px] font-montserrat text-white sm:max-w-sm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fuga
             consectetur quaerat inventore accusamus praesentium!

@@ -3,7 +3,7 @@ import Button from "./Button";
 const Subscribe = () => {
   return (
     <section
-      id='services'
+      id='contact-us'
       className='padding-x sm:py-32 py-16 w-full flex justify-between items-center max-lg:flex-col gap-10'
     >
       <h3 className='text-4xl leading-[68px] lg:max-w-md font-palanquin'>

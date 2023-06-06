@@ -1,10 +1,17 @@
 import Image from "next/image";
 
+const navLinks = [
+  { href: "#home", label: "Home" },
+  { href: "#about-us", label: "About Us" },
+  { href: "#services", label: "Services" },
+  { href: "#contact-us", label: "Contact Us" },
+];
+
 const Nav = () => {
   return (
-    <header id='home' className='absolute w-full z-10'>
+    <header className='absolute w-full z-10'>
       <nav className='flex justify-between items-center padding-x py-8'>
-        <a href='#home' className=''>
+        <a href='/'>
           <Image
             src='/assets/images/header-logo.svg'
             alt='logo'
@@ -14,38 +21,16 @@ const Nav = () => {
           />
         </a>
         <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
-          <li>
-            <a
-              href='#home'
-              className='font-montserrat leading-normal text-lg text-slate-gray'
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href='#about-us'
-              className='font-montserrat leading-normal text-lg text-slate-gray'
-            >
-              About Us
-            </a>
-          </li>
-          <li>
-            <a
-              href='#services'
-              className='font-montserrat leading-normal text-lg text-slate-gray'
-            >
-              Services
-            </a>
-          </li>
-          <li>
-            <a
-              href='#contact-us'
-              className='font-montserrat leading-normal text-lg text-slate-gray'
-            >
-              Contact Us
-            </a>
-          </li>
+          {navLinks.map((item) => (
+            <li key={item.label}>
+              <a
+                href={item.href}
+                className='font-montserrat leading-normal text-lg text-slate-gray'
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
         <div className='flex gap-2 text-lg leading-normal font-medium max-lg:hidden xl:pr-20'>
           <a className='font-montserrat '>Sign in</a>
