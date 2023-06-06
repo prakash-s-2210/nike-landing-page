@@ -1,27 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
 
-import Button from "./Button";
-import ShoeCollectionCard from "./ShoeCollectionCard";
+import { Button, ShoeCard } from "@/components";
+import { shoes } from "@/constants";
 
-const images = [
-  {
-    thumbnail: "/assets/images/thumbnail-shoe1.svg",
-    bigShoe: "/assets/images/big-shoe1.png",
-  },
-  {
-    thumbnail: "/assets/images/thumbnail-shoe2.svg",
-    bigShoe: "/assets/images/big-shoe2.png",
-  },
-  {
-    thumbnail: "/assets/images/thumbnail-shoe3.svg",
-    bigShoe: "/assets/images/big-shoe3.png",
-  },
-];
-
-const Collections = () => {
+const Hero = () => {
   const [source, setSource] = useState("/assets/images/big-shoe1.png");
 
   const changeShoeImage = (imgSrc) => {
@@ -81,9 +66,9 @@ const Collections = () => {
         />
 
         <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
-          {images.map((image, index) => (
+          {shoes.map((image, index) => (
             <div key={index}>
-              <ShoeCollectionCard
+              <ShoeCard
                 index={index}
                 imgSource={image}
                 changeShoeImage={changeShoeImage}
@@ -97,4 +82,4 @@ const Collections = () => {
   );
 };
 
-export default Collections;
+export default Hero;
