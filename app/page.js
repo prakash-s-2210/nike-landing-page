@@ -1,6 +1,6 @@
 
 import Nav from "../components/Nav";
-import { Footer, Hero, PopularProducts } from "@/sections";
+import { Footer, Hero, PopularProducts, SuperQuality } from "@/sections";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <PopularProducts />
+      <SuperQuality />
       <Footer />
       {/* <ProductDetail /> */}
       {/* <SupportSection /> */}

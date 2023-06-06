@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import Button from "./Button";
+import { Button } from "@/components";
 
-const ProductDetail = () => {
+const SuperQuality = () => {
   return (
     <section
       id='about-us'
@@ -40,4 +40,4 @@ const ProductDetail = () => {
   );
 };
 
-export default ProductDetail;
+export default SuperQuality;
