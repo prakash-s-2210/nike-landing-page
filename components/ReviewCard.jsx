@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ReviewCard = ({ imgURL, customerName, rating }) => {
   return (
-    <div className='flex justify-center items-center flex-col'>
+    <div className='flex-center flex-col'>
       <Image
         src={imgURL}
         alt='customer'
@@ -15,7 +15,7 @@ const ReviewCard = ({ imgURL, customerName, rating }) => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit
         soluta ea dolorum repellat consectetur atque ex corporis minus maiores?
       </p>
-      <div className='mt-3 flex justify-center items-center gap-[10px]'>
+      <div className='mt-3 flex-center gap-[10px]'>
         <Image
           src='/assets/icon/star.svg'
           alt='rating star'

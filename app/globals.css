@@ -42,4 +42,8 @@ body {
   .padding-b {
     @apply sm:pb-24 pb-12;
   }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
 }
