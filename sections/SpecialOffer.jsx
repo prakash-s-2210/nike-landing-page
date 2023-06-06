@@ -7,7 +7,7 @@ const SpecialOffer = () => {
     <section className='flex-between max-xl:flex-col-reverse gap-10 padding'>
       <div className='flex-1'>
         <Image
-          src='/assets/images/offer.svg'
+          src='/assets/images/offer.png'
           alt='Shoe Promotion'
           width={773}
           height={687}

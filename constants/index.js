@@ -7,15 +7,15 @@ export const navLinks = [
 
 export const shoes = [
     {
-        thumbnail: "/assets/images/thumbnail-shoe1.svg",
+        thumbnail: "/assets/images/big-shoe1.png",
         bigShoe: "/assets/images/big-shoe1.png",
     },
     {
-        thumbnail: "/assets/images/thumbnail-shoe2.svg",
+        thumbnail: "/assets/images/big-shoe2.png",
         bigShoe: "/assets/images/big-shoe2.png",
     },
     {
-        thumbnail: "/assets/images/thumbnail-shoe3.svg",
+        thumbnail: "/assets/images/big-shoe3.png",
         bigShoe: "/assets/images/big-shoe3.png",
     },
 ];
@@ -29,22 +29,22 @@ export const statistics = [
 
 export const products = [
     {
-        imgURL: "/assets/images/shoe4.svg",
+        imgURL: "/assets/images/shoe4.png",
         name: "Nike Air Jordan-01",
         price: "$200.20",
     },
     {
-        imgURL: "/assets/images/shoe5.svg",
+        imgURL: "/assets/images/shoe5.png",
         name: "Nike Air Jordan-10",
         price: "$210.20",
     },
     {
-        imgURL: "/assets/images/shoe6.svg",
+        imgURL: "/assets/images/shoe6.png",
         name: "Nike Air Jordan-100",
         price: "$220.20",
     },
     {
-        imgURL: "/assets/images/shoe7.svg",
+        imgURL: "/assets/images/shoe7.png",
         name: "Nike Air Jordan-001",
         price: "$230.20",
     },

@@ -29,7 +29,7 @@ const SuperQuality = () => {
 
       <div className='flex-1 flex-center'>
         <Image
-          src='/assets/images/shoe8.svg'
+          src='/assets/images/shoe8.png'
           alt='product detail'
           width={570}
           height={522}
