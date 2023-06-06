@@ -4,6 +4,7 @@ import ShoeCard from "./ShoeCard";
 import PopularProductCard from "./PopularProductCard";
 import ServiceCard from "./ServiceCard";
 import ReviewCard from "./ReviewCard";
+import NextPrev from "./NextPrev";
 
 export {
     Button,
@@ -11,5 +12,6 @@ export {
     ShoeCard,
     PopularProductCard,
     ServiceCard,
-    ReviewCard
+    ReviewCard,
+    NextPrev
 }

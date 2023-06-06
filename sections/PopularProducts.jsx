@@ -1,7 +1,5 @@
-import Image from "next/image";
-
 import { products } from "@/constants";
-import { PopularProductCard } from "@/components";
+import { NextPrev, PopularProductCard } from "@/components";
 
 const PopularProducts = () => {
   return (
@@ -15,28 +13,9 @@ const PopularProducts = () => {
           a quo minima aliquam autem iusto.
         </p>
       </div>
-      <div className='flex justify-end gap-[14px]'>
-        <button>
-          <Image
-            src='/assets/icon/chevron-left.svg'
-            alt='chevron left'
-            width={48}
-            height={48}
-            quality={100}
-            className='max-sm:w-8'
-          />
-        </button>
-        <button>
-          <Image
-            src='/assets/icon/chevron-right.svg'
-            alt='chevron right'
-            width={48}
-            height={48}
-            quality={100}
-            className='max-sm:w-8'
-          />
-        </button>
-      </div>
+
+      <NextPrev />
+
       <div className='mt-6 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14'>
         {products.map((product) => (
           <PopularProductCard key={product.name} {...product} />
