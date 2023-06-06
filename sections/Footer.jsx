@@ -1,42 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const footerLinks = [
-  {
-    title: "Products",
-    links: [
-      { name: "Air Force 1", link: "/" },
-      { name: "Air Max 1", link: "/" },
-      { name: "Air Jordan 1", link: "/" },
-      { name: "Air Force 1", link: "/" },
-      { name: "Nike Waffle Racer", link: "/" },
-      { name: "Nike Cortez", link: "/" },
-    ],
-  },
-  {
-    title: "Help",
-    links: [
-      { name: "About us", link: "/" },
-      { name: "FAQs", link: "/" },
-      { name: "How it works", link: "/" },
-      { name: "Privacy policy", link: "/" },
-      { name: "Payment policy", link: "/" },
-    ],
-  },
-  {
-    title: "Get in touch",
-    links: [
-      { name: "nikeshoes565@gmail.com", link: "mailto:nikeshoes565@gmail.com" },
-      { name: "+92554862354", link: "tel:+92554862354" },
-    ],
-  },
-];
-
-const socialMedia = [
-  { src: "/assets/icon/facebook.svg", alt: "facebook logo" },
-  { src: "/assets/icon/twitter.svg", alt: "twitter logo" },
-  { src: "/assets/icon/instagram.svg", alt: "instagram logo" },
-];
+import { footerLinks, socialMedia } from "@/constants";
 
 const Footer = () => {
   return (

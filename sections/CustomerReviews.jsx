@@ -38,12 +38,12 @@ const CustomerReviews = () => {
       </div>
       <div className='flex flex-1 justify-evenly items-center max-lg:flex-col gap-14 mt-5'>
         <ReviewCard
-          source='/assets/images/customer1.svg'
+          imgURL='/assets/images/customer1.svg'
           customerName='Morich Brown'
           rating={4.5}
         />
         <ReviewCard
-          source='/assets/images/customer2.svg'
+          imgURL='/assets/images/customer2.svg'
           customerName='Lota Mongeskar'
           rating={4.5}
         />

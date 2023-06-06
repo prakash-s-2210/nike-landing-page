@@ -1,11 +1,6 @@
 import Image from "next/image";
 
-const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about-us", label: "About Us" },
-  { href: "#services", label: "Services" },
-  { href: "#contact-us", label: "Contact Us" },
-];
+import { navLinks } from "@/constants";
 
 const Nav = () => {
   return (
@@ -32,10 +27,10 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <div className='flex gap-2 text-lg leading-normal font-medium max-lg:hidden xl:pr-20'>
-          <a className='font-montserrat '>Sign in</a>
-          <span className='font-montserrat '>/</span>
-          <a className='font-montserrat'>Explore now</a>
+        <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden xl:pr-20'>
+          <a href='/'>Sign in</a>
+          <span>/</span>
+          <a href='/'>Explore now</a>
         </div>
         <div className='hidden max-lg:block'>
           <Image

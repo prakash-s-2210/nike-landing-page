@@ -3,15 +3,11 @@
 import Image from "next/image";
 import { useState } from "react";
 
+import { shoes, statistics } from "@/constants";
 import { Button, ShoeCard } from "@/components";
-import { shoes } from "@/constants";
 
 const Hero = () => {
-  const [source, setSource] = useState("/assets/images/big-shoe1.png");
-
-  const changeShoeImage = (imgSrc) => {
-    setSource(imgSrc);
-  };
+  const [bigShoeImg, setBigShoeImg] = useState("/assets/images/big-shoe1.png");
 
   return (
     <section
@@ -37,27 +33,21 @@ const Hero = () => {
 
         <Button label='Shop now' iconURL='/assets/icon/arrow-right.svg' />
 
-        <div className='flex justify-start items-start flex-wrap w-full mt-[78px] gap-[60px]'>
-          <div>
-            <p className='text-4xl font-palanquin'>1k+</p>
-            <p className='leading-7 font-montserrat text-slate-gray'>Brands</p>
-          </div>
-          <div>
-            <p className='text-4xl font-palanquin '>500+</p>
-            <p className='leading-7 font-montserrat text-slate-gray'>Shops</p>
-          </div>
-          <div>
-            <p className='text-4xl font-palanquin'>250k+</p>
-            <p className='leading-7 font-montserrat text-slate-gray'>
-              Customers
-            </p>
-          </div>
+        <div className='flex justify-start items-start flex-wrap w-full mt-[78px] gap-16'>
+          {statistics.map((stat, index) => (
+            <div key={index}>
+              <p className='text-4xl font-palanquin'>{stat.value}</p>
+              <p className='leading-7 font-montserrat text-slate-gray'>
+                {stat.label}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 
       <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
         <Image
-          src={source}
+          src={bigShoeImg}
           alt='shoe colletion'
           width={610}
           height={502}
@@ -70,9 +60,9 @@ const Hero = () => {
             <div key={index}>
               <ShoeCard
                 index={index}
-                imgSource={image}
-                changeShoeImage={changeShoeImage}
-                source={source}
+                imgURL={image}
+                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                bigShoeImg={bigShoeImg}
               />
             </div>
           ))}

@@ -1,4 +1,4 @@
-import Nav from "../components/Nav";
+import { Nav } from "@/components";
 import {
   CustomerReviews,
   Footer,
@@ -12,7 +12,7 @@ import {
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Nav />
       <Hero />
       <PopularProducts />
@@ -22,6 +22,6 @@ export default function Home() {
       <CustomerReviews />
       <Subscribe />
       <Footer />
-    </div>
+    </>
   )
 }

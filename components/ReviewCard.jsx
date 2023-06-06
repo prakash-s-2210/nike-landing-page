@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-const ReviewCard = ({ source, customerName, rating }) => {
+const ReviewCard = ({ imgURL, customerName, rating }) => {
   return (
     <div className='flex justify-center items-center flex-col'>
       <Image
-        src={source}
+        src={imgURL}
         alt='customer'
         width={120}
         height={120}
