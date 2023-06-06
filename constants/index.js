@@ -35,3 +35,18 @@ export const products = [
         price: "$230.20",
     },
 ];
+
+export const services = [
+    {
+        imgURL: "/assets/icon/truck-fast.svg",
+        label: "Free shipping",
+    },
+    {
+        imgURL: "/assets/icon/shield-tick.svg",
+        label: "Secure Payment",
+    },
+    {
+        imgURL: "/assets/icon/kindness.svg",
+        label: "Love to help you",
+    },
+];

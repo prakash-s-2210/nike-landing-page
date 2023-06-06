@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const SupportSectionCard = ({ imgURL, label }) => {
+const ServiceCard = ({ imgURL, label }) => {
   return (
     <div className='flex-1 sm:max-w-[350px] max-w-full sm:min-w-[350px] min-w-full rounded-[20px] shadow-3xl px-10 py-16'>
       <div className='w-[44px] h-[44px] flex justify-center items-center bg-coral-red rounded-full'>
@@ -14,4 +14,4 @@ const SupportSectionCard = ({ imgURL, label }) => {
   );
 };
 
-export default SupportSectionCard;
+export default ServiceCard;
