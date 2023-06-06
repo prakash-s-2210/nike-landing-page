@@ -72,7 +72,7 @@ export const footerLinks = [
             { name: "Air Force 1", link: "/" },
             { name: "Air Max 1", link: "/" },
             { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 1", link: "/" },
+            { name: "Air Force 2", link: "/" },
             { name: "Nike Waffle Racer", link: "/" },
             { name: "Nike Cortez", link: "/" },
         ],
