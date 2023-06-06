@@ -4,7 +4,7 @@ const Subscribe = () => {
   return (
     <section
       id='contact-us'
-      className='padding-x sm:py-32 py-16 w-full flex justify-between items-center max-lg:flex-col gap-10'
+      className='padding-x sm:py-32 py-16 w-full flex-between max-lg:flex-col gap-10'
     >
       <h3 className='text-4xl leading-[68px] lg:max-w-md font-palanquin'>
         Sign Up for

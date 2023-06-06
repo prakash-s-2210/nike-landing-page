@@ -4,7 +4,7 @@ import { Button } from "@/components";
 
 const SpecialOffer = () => {
   return (
-    <section className='flex justify-between items-center max-xl:flex-col-reverse gap-10 padding'>
+    <section className='flex-between max-xl:flex-col-reverse gap-10 padding'>
       <div className='flex-1'>
         <Image
           src='/assets/images/offer.svg'
