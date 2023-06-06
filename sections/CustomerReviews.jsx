@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import ReviewCard from "./ReviewCard";
+import { ReviewCard } from "@/components";
 
-const Review = () => {
+const CustomerReviews = () => {
   return (
     <section className='bg-pale-blue padding'>
       <h3 className='font-palanquin text-center text-4xl'>
@@ -52,4 +52,4 @@ const Review = () => {
   );
 };
 
-export default Review;
+export default CustomerReviews;

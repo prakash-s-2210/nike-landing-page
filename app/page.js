@@ -1,6 +1,6 @@
 
 import Nav from "../components/Nav";
-import { Footer, Hero, PopularProducts, Services, SpecialOffer, SuperQuality } from "@/sections";
+import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffer, SuperQuality } from "@/sections";
 
 export default function Home() {
   return (
@@ -11,8 +11,8 @@ export default function Home() {
       <SuperQuality />
       <Services />
       <SpecialOffer />
+      <CustomerReviews />
       <Footer />
-      {/* <Review /> */}
       {/* <Subscribe /> */}
     </div>
   )
