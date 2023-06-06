@@ -1,6 +1,6 @@
 
 import Nav from "../components/Nav";
-import { Footer, Hero, PopularProducts, Services, SuperQuality } from "@/sections";
+import { Footer, Hero, PopularProducts, Services, SpecialOffer, SuperQuality } from "@/sections";
 
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
       <PopularProducts />
       <SuperQuality />
       <Services />
+      <SpecialOffer />
       <Footer />
-      {/* <ShoePromotion /> */}
       {/* <Review /> */}
       {/* <Subscribe /> */}
     </div>

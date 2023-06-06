@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import Button from "./Button";
+import { Button } from "@/components";
 
-const ShoePromotion = () => {
+const SpecialOffer = () => {
   return (
     <section className='flex justify-between items-center max-xl:flex-col-reverse gap-10 padding'>
       <div className='flex-1'>
@@ -44,4 +44,4 @@ const ShoePromotion = () => {
   );
 };
 
-export default ShoePromotion;
+export default SpecialOffer;
