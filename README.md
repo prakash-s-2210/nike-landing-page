@@ -13,4 +13,4 @@ This project aims to help you:
 
 ## Screenshot
 
-<img width="1440" alt="nike-landing-page" src="https://github.com/prakash-s-2210/ecommerce/assets/94909544/85e483bd-dbac-41c7-9998-c3b17191170a">
+<img width="1440" alt="nike-landing-page" src="https://github.com/prakash-s-2210/nike-landing-page/assets/94909544/429b931c-a2de-4ddc-a0c6-0f6735ef181c">
