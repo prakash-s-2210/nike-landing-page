@@ -2,7 +2,7 @@
 
 Welcome to the "Nike Landing Page with Next.js and Tailwind CSS" project! This project will guide you through the process of creating a captivating Nike landing page while leveraging the power of Next.js and the flexibility of Tailwind CSS.
 
-## Course Overview
+## Project Overview
 
 This project aims to help you:
 
