@@ -1,25 +1,27 @@
-import Nav from "../components/Nav";
-import Collections from '@/components/Collections';
-import Footer from "@/components/Footer";
-import PopularProducts from '@/components/PopularProducts';
-import ProductDetail from '@/components/ProductDetail';
-import Review from "@/components/Review";
-import ShoePromotion from "@/components/ShoePromotion";
-import Subscribe from "@/components/Subscribe";
-import SupportSection from "@/components/SupportSection";
+import { Nav } from "@/components";
+import {
+  CustomerReviews,
+  Footer,
+  Hero,
+  PopularProducts,
+  Services,
+  SpecialOffer,
+  Subscribe,
+  SuperQuality
+} from "@/sections";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Nav />
-      <Collections />
+      <Hero />
       <PopularProducts />
-      <ProductDetail />
-      <SupportSection />
-      <ShoePromotion />
-      <Review />
+      <SuperQuality />
+      <Services />
+      <SpecialOffer />
+      <CustomerReviews />
       <Subscribe />
       <Footer />
-    </div>
+    </>
   )
 }

@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -23,18 +24,23 @@ module.exports = {
         montserrat: ["var(--font-Montserrat)"],
       },
       colors: {
+        'primary': "#ECEEFF",
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
-        "pale-blue":"#F5F6FF",
+        "pale-blue": "#F5F6FF",
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
-      keyframes:{
+      backgroundImage: {
+        'hero': "url('/assets/images/collection-background.svg')",
+        'card': "url('/assets/images/thumbnail-background.svg')",
+      },
+      keyframes: {
         pulse: {
-          '0%': { opacity: '0'},
-          '50%': { opacity: '0.5'},
-          '100%':{opacity: '1'}
+          '0%': { opacity: '0' },
+          '50%': { opacity: '0.5' },
+          '100%': { opacity: '1' }
         }
       },
       animation: {

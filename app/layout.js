@@ -1,18 +1,21 @@
-import "./globals.css";
 import { Montserrat, Palanquin_Dark } from "next/font/google";
 
+import "./globals.css";
+
 const montserrat = Montserrat(
-  { subsets: ["latin"],
-  variable: '--font-Montserrat',
-}
-  );
+  {
+    subsets: ["latin"],
+    variable: '--font-Montserrat',
+  }
+);
+
 const palanquinDark = Palanquin_Dark(
-  { 
-    subsets: ["latin"], 
-    weight: ["400","500","600","700" ],
+  {
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
     variable: '--font-palanquinDark',
   }
-  );
+);
 
 export const metadata = {
   title: "Shop the Best Shoes Online",
@@ -24,7 +27,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.variable} ${palanquinDark.variable}`}>
-        {children}
+        <main className="relative">
+          {children}
+        </main>
       </body>
     </html>
   );
