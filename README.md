@@ -10,3 +10,7 @@ This project aims to help you:
 - Gain a full understanding of how Tailwind works behind-the-scenes.
 - Follow all of Tailwind's best practices for efficient styling.
 - Put all of your newly gained Tailwind skills to the test by building a beautiful Nike landing page.
+
+## Screenshot
+
+<img width="1440" alt="nike-landing-page" src="https://github.com/prakash-s-2210/ecommerce/assets/94909544/85e483bd-dbac-41c7-9998-c3b17191170a">
